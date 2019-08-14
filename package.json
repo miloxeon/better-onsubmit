@@ -1,0 +1,22 @@
+{
+  "name": "formie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "formie.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uyouthe/formie.git"
+  },
+  "author": "Miloslav Voloskov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uyouthe/formie/issues"
+  },
+  "homepage": "https://github.com/uyouthe/formie#readme",
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}
