@@ -7,11 +7,96 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>Formie demo</title>
+
+  <style>
+    .group {
+      display: block;
+    }
+
+    .group+.group {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
-  <form>
+  <form id='form'>
+    <h4>Mars vacation program</h4>
+    <fieldset>
+      <legend>Be first</legend>
 
+      <label class="group">
+        Name<br>
+        <input name="name" type="text" value="Elon Reeve Musk">
+      </label>
+
+      <div class="group">
+        <p>Gender<br>
+          <label>
+            <input type="radio" name="gender" value="male" checked>
+            Male
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female">
+            Female
+          </label>
+        </p>
+      </div>
+
+      <label class="group">
+        Date of birth<br>
+        <input name="date" type="date" value="1971-06-28">
+      </label>
+
+      <label class="group">
+        Email<br>
+        <input name="email" type="email" value="elon.musk@spacex.com">
+      </label>
+
+
+      <label class="group">
+        Phone number<br>
+        <input name="phone" type="tel" placeholder="Numbers only, please">
+      </label>
+
+      <label class="group">
+        Country<br>
+        <select name="country">
+          <option value="usa" selected="selected">USA</option>
+          <option value="russia">Russia</option>
+          <option value="china">China</option>
+        </select>
+      </label>
+
+      <label class="group">
+        Tell us about yourself<br>
+        <textarea name="about"></textarea>
+      </label>
+
+      <label class="group">
+        Photo<br>
+        <input name="photo" type="file">
+      </label>
+
+      <label class="group">
+        Eyes color <small>(just kidding)</small><br>
+        <input name="eyes-color" type="color">
+      </label>
+
+      <label class="group">
+        Password<br>
+        <input name="password" type="password" placeholder="Use strong password!"><br>
+      </label>
+
+      <label class="group">
+        <input name="sacrificed_soul" type="checkbox" checked="checked">I pass my soul to SpaceX.
+      </label>
+
+      <div class="group">
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </fieldset>
   </form>
   <script src='./app.js'></script>
 </body>
