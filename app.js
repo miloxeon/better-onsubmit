@@ -1,2 +1,2 @@
 import formie from './formie'
-formie()
+document.getElementById('form').onsubmit = formie(console.log)
