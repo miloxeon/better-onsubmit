@@ -12,7 +12,9 @@ Get values from HTML form as JSON.
 </script>
 ```
 
-# JSON example (you'll get a JSON like this from your submitted form)
+# JSON example
+
+You'll get a JSON like this from your submitted form:
 
 ```JS
 {
