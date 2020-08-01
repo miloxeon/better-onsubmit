@@ -1,29 +1,36 @@
-const omitInvalid = element =>
-  element.type === 'radio' ?
-  element.checked :
-  Boolean(element.name)
+function formie (cb) {
+	return e => {
+		e.preventDefault()
+		const form = e.target
 
-const decisionMatrix = {
-  'checkbox': node => node.checked,
-  'file': node => node.files,
-  'default': node => node.value
-}
+		if (!form) {
+			console.warn('No form detected by formie')
+			return
+		}
 
-export default cb => e => {
-  e.preventDefault()
+		const rawChildren = form.querySelectorAll('*')
+		const children = Array.prototype.slice.call(rawChildren)
+		const inputs = children.filter(node => node.type === 'radio'
+			? node.checked
+			: Boolean(node.name)
+		)
+	
+		let result = {}
+	
+		inputs.forEach(input => {
+			let value;
 
-  const form = e.target
-  const rawChildren = form.querySelectorAll('*')
-  const children = Array.prototype.slice.call(rawChildren)
-  const inputs = children.filter(omitInvalid)
+			if (input.type === 'checkbox') {
+				value = input.checked
+			} else if (input.type === 'file') {
+				value = input.files
+			} else {
+				value = input.value
+			}
 
-  let result = {}
-
-  inputs.forEach(input => {
-    result[input.name] = decisionMatrix[input.type] ?
-      decisionMatrix[input.type](input) :
-      decisionMatrix['default'](input)
-  })
-
-  cb(result)
+			result[input.name] = value
+		})
+	
+		cb(result)
+	}
 }

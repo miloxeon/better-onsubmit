@@ -8,15 +8,7 @@
 
   <title>Formie demo</title>
 
-  <style>
-    .group {
-      display: block;
-    }
-
-    .group+.group {
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
 </head>
 
 <body>
@@ -99,7 +91,10 @@
       </div>
     </fieldset>
   </form>
-  <script src='./app.js'></script>
+  <script src='formie.js'></script>
+  <script>
+    document.getElementById('form').onsubmit = formie(console.log)
+  </script>
 </body>
 
 </html>
