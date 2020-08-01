@@ -4,7 +4,7 @@ Get values from HTML form as JSON.
 
 # Usage
 
-```JS
+```HTML
 <script src="https://cdn.jsdelivr.net/gh/uyouthe/formie/formie.min.js"></script>
 <script>
   // do whatever you want with the values
@@ -14,7 +14,7 @@ Get values from HTML form as JSON.
 
 # JSON example (you'll get a JSON like this from your submitted form)
 
-```JSON
+```JS
 {
     about: "",
     country: "usa",
