@@ -24,6 +24,12 @@ function formie (cb) {
 				value = input.checked
 			} else if (input.type === 'file') {
 				value = input.files
+			} else if (input.type === 'select-multiple') {
+				value = Array.prototype.slice.call(input.options).filter(
+					option => option.selected
+				).map(
+					option => option.value
+				)
 			} else {
 				value = input.value
 			}
