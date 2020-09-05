@@ -16,6 +16,12 @@ Thanks to [Cosmopolite](https://github.com/uyouthe/cosmopolite) Formie is also a
 ```
 npm install uyouthe/formie
 ```
+```js
+import formie from 'formie'
+
+// do whatever you want with the values
+document.getElementById('myAmazingForm').onsubmit = formie(values => console.log(values))
+```
 
 # JSON example
 
