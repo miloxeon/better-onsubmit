@@ -1,0 +1,21 @@
+{
+  "name": "formie",
+  "version": "1.0.0",
+  "description": "💾 Get values from HTML form as JSON ",
+  "repository": "git@github.com:uyouthe/formie.git",
+  "main": "src/index.js",
+  "author": "uyouthe",
+  "license": "BSL-1.0",
+  "scripts": {
+    "build-iife": "rollup -c"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build-iife"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "rollup": "^2.26.10"
+  }
+}
