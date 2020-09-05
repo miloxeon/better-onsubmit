@@ -12,6 +12,8 @@ Get values from HTML form as JSON.
 </script>
 ```
 
+Thanks to [Cosmopolite](https://github.com/uyouthe/cosmopolite) Formie is also available as a [NPM package](https://github.com/uyouthe/formie/packages).
+
 # JSON example
 
 You'll get a JSON like this from your submitted form:
