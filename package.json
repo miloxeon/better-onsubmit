@@ -6,6 +6,9 @@
   "main": "src/index.js",
   "author": "uyouthe",
   "license": "BSL-1.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build-iife": "rollup -c"
   },
