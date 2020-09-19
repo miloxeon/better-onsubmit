@@ -1,5 +1,5 @@
 {
-  "name": "@uyouthe/formie",
+  "name": "formie",
   "version": "1.0.0",
   "description": "💾 Get values from HTML form as JSON ",
   "repository": "git@github.com:uyouthe/formie.git",
