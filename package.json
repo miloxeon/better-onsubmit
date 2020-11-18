@@ -2,13 +2,10 @@
   "name": "formie",
   "version": "1.0.0",
   "description": "💾 Get values from HTML form as JSON ",
-  "repository": "git@github.com:uyouthe/formie.git",
+  "repository": "git@github.com:mvoloskov/formie.git",
   "main": "src/index.js",
-  "author": "uyouthe",
+  "author": "mvoloskov",
   "license": "BSL-1.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "build-iife": "rollup -c"
   },
