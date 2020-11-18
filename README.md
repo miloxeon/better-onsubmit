@@ -5,16 +5,16 @@ Get values from HTML form as JSON.
 # Usage
 
 ```HTML
-<script src="https://cdn.jsdelivr.net/gh/uyouthe/formie/formie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mvoloskov/formie/formie.min.js"></script>
 <script>
   // do whatever you want with the values
   document.getElementById('myAmazingForm').onsubmit = formie(values => console.log(values))
 </script>
 ```
 
-Thanks to [Cosmopolite](https://github.com/uyouthe/cosmopolite) Formie is also available as a NPM package:
+Thanks to [Cosmopolite](https://github.com/mvoloskov/cosmopolite) Formie is also available as a NPM package:
 ```
-npm install uyouthe/formie
+npm install mvoloskov/formie
 ```
 
 # JSON example
