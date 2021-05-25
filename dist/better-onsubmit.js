@@ -1,4 +1,4 @@
-var formie = (function () {
+var betterOnsubmit = (function () {
 	'use strict';
 
 	var index = cb => e => {

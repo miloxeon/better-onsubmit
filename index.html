@@ -13,14 +13,14 @@
 
 <body>
   <form id='form'>
-    <h4>Mars vacation program</h4>
+    <h4>Moon travel program</h4>
     <p>Open console to see the results</p>
     <fieldset>
       <legend>Be first</legend>
 
       <label class="group">
         Name<br>
-        <input name="name" type="text" value="Elon Reeve Musk">
+        <input name="name" type="text" value="Neil Alden Armstrong">
       </label>
 
       <div class="group">
@@ -38,12 +38,12 @@
 
       <label class="group">
         Date of birth<br>
-        <input name="date" type="date" value="1971-06-28">
+        <input name="date" type="date" value="1930-08-05">
       </label>
 
       <label class="group">
         Email<br>
-        <input name="email" type="email" value="elon.musk@spacex.com">
+        <input name="email" type="email" value="neil.armstrong@nasa.com">
       </label>
 
 
@@ -91,7 +91,7 @@
       </label>
 
       <label class="group">
-        <input name="sacrificed_soul" type="checkbox" checked="checked">I pass my soul to SpaceX.
+        <input name="has-speedy" type="checkbox" checked="checked">I have put my watch on.
       </label>
 
       <div class="group">
@@ -100,9 +100,9 @@
       </div>
     </fieldset>
   </form>
-  <script src='dist/formie.js'></script>
+  <script src='dist/better-onsubmit.js'></script>
   <script>
-    document.getElementById('form').onsubmit = formie(console.log)
+    document.getElementById('form').onsubmit = betterOnsubmit(console.log)
   </script>
 </body>
 

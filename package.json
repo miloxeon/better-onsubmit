@@ -1,11 +1,20 @@
 {
-  "name": "formie",
+  "name": "better-onsubmit",
   "version": "1.0.0",
-  "description": "💾 Get values from HTML form as JSON ",
-  "repository": "git@github.com:mvoloskov/formie.git",
+  "description": "💾 get an HTML form values as a JS object",
+  "repository": "git@github.com:mvoloskov/better-onsubmit.git",
   "main": "src/index.js",
   "author": "mvoloskov",
   "license": "BSL-1.0",
+  "keywords": [
+    "json",
+    "html-form",
+    "small-tools",
+    "form-to-object"
+  ],
+  "files": [
+    "/src"
+  ],
   "scripts": {
     "build-iife": "rollup -c"
   },
