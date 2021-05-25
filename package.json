@@ -16,7 +16,8 @@
     "/src"
   ],
   "scripts": {
-    "build-iife": "rollup -c"
+    "build-iife": "rollup -c",
+    "test": "exit 0"
   },
   "husky": {
     "hooks": {
