@@ -1,7 +1,7 @@
 {
   "name": "better-onsubmit",
   "version": "1.0.0",
-  "description": "💾 get an HTML form values as a JS object",
+  "description": "💾 Get an HTML form values as a JS object",
   "repository": "git@github.com:mvoloskov/better-onsubmit.git",
   "main": "src/index.js",
   "author": "mvoloskov",
